@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<script src="https://kit.fontawesome.com/4d3ebe1415.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Main_css.css' %}">
+	<link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class ="Smb">
+    	<ul id="Nb">
+    		<li style="float: left;"><img src="{% static 'images/Logo.png' %}" width="75em" height="75em" style="display: inline; padding: 0.35em;"></li></li>
+    		<li><a class="active" href="{% url 'Home' %}"><i class="fa-solid fa-house"></i>  HOME</a></li> 
+    		<li><a href="{% url 'Abtus' %}"><i class="fa-solid fa-circle-info"></i>  ABOUT US</a></li>
+    		<li><a href="{% url 'Hist' %}"><i class="fa-solid fa-landmark"></i>  HISTROY</a></li>
+	</ul>
+    </div>
+    <div class="row">
+    	<div class="column middle">
+	    	<p id="Caltwo"><img src="{% static 'images/HM22.png' %}"class="Imgs"></p>
+	    	<div class="topleft"><img src="{% static 'images/Logo.png' %}" height="90em" width="90em"></div>
+	    	<div class="bottomleft"><h1 id="Medi">MEDICATION</h1><h4 id="Fll">FOR ALL</h4><p id="Cnt">Medication is fundamental need for all in this world.<br>There should Not be any partiality in it. This trust works to ensure it.</p></div>
+	    </div>
+	    <div class="column side">
+	    	<img src="{% static 'images/Hm1.png' %}" height="300em" width="250em">
+	    </div>
+    </div>
+</div>
+</body>
+</html>

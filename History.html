@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<script src="https://kit.fontawesome.com/4d3ebe1415.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Main_css.css' %}">
+	<link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class ="Smb">
+    	<ul id="Nb">
+    		<li style="float: left;"><img src="{% static 'images/Logo.png' %}" width="75em" height="75em" style="display: inline; padding: 0.35em;"></li></li>
+    		<li><a href="{% url 'Home' %}"><i class="fa-solid fa-house"></i>  HOME</a></li> 
+    		<li><a href="{% url 'Abtus' %}"><i class="fa-solid fa-circle-info"></i>  ABOUT US</a></li>
+    		<li><a class="active" href="{% url 'Hist' %}"><i class="fa-solid fa-landmark"></i>  HISTROY</a></li>
+	</ul>
+    </div>
+    <div class="His">
+    	<p id="Wmd">WHAT MEDICO HAS DONE?</p>
+    	<p id="Wmd1">We have successfully supported 348 pepole to get quality medication.<br> Our medical camps has helped 100000+ to get to know about the health issue in right time and get cured.</p>
+    	<img src="{% static 'images/Hs1.png' %}" style="border-radius: 0.5em;" ids="Ihj">
+    </div>
+</div>
+</body>
+</html>
